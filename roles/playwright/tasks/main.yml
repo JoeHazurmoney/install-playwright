@@ -1,0 +1,9 @@
+---
+- name: Include Vaulted Variables
+  include_vars: vault.yml
+  tags:
+    - always
+
+- name: Run prelim tasks
+  import_tasks: prelim.yml
+
